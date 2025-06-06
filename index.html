@@ -1,52 +1,83 @@
 <html>
-<ul>
-    <li><a href = "" >HOME</a></li><li><a href = "" >ABOUT US</a></li><li><a href = "" >CONTACT</a></li>
-</ul>
-    <style>
-        .navbar {
-            background-color: #333;
-            padding: 10px;
-        }
-        .navbar a {
-            color: white; /* Change this to any color you want */
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-        .navbar a:hover {
-            color: yellow; /* Font color on hover */
-        }
-    </style>
 <head>
-    <title>Background Image Example</title>
-    <style>
-        body {
-            background-image: url('flower.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: fixed;
-            
-            margin: 0;
-            height: 100vh;
+  
+  <title>Navbar Horizontal</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('flower.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      height: 100vh;
+      font-family: 'Times New Roman', times, serif;
+    }
 
-            
-            font-family: 'Times New Roman', Times, serif;
-            color: white;
+    .navbar {
+      padding: 20px;
+      text-align: center;
+    }
 
-           
-            display: flex;
-            justify-content: center;   
-                  
-            text-align: center;
+    .navbar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
 
-                    }
-    </style>
+    .navbar li {
+      display: inline; 
+      margin: 0 15px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      color: yellow;
+    }
+
+    .heading {
+      text-align: center;
+      margin-top: 50px;
+      color: white;
+    }
+	
+     .heading button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #ffffff;
+      color: green ;
+      font-family: 'Times New Roman', times, serif;
+
+     
+    }
+     .heading button:hover {
+   	color: black; 
+	}
+  </style>
 </head>
 <body>
-    <div>
-        <h1>Welcome flower Daisy</h1>
-        <p>I'm Anushka Ghat</p>
-    </div>
+
+  <div class="navbar">
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">ABOUT US</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <div class="heading">
+    <h1>Welcome flower Daisy</h1>
+    <p>I'm Anushka Ghat</p>
+    <button><a href = "https://www.thespruce.com/daisy-types-for-gardens-1316051">CLICK ME!!</a></button>
+  </div>
+
 </body>
 </html>
